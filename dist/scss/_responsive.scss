@@ -1,0 +1,90 @@
+@include media-md{
+ .menu-btn{
+    visibility: hidden;
+}
+
+.nav{
+    visibility: visible;
+
+    .menu-nav{
+        display: block;
+        transform:  translateY(0);
+        height: 100%;
+        background: transparent;
+        text-align: right;
+    
+        &__item{
+            display: inline;
+            padding-right: 1.5rem;
+        }
+        &__link{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.skills , .interest , .education{
+    font-size: 5rem;
+    width: 7em;
+    font-family: 'Times New Roman', Times, serif;
+    
+   
+    
+    .text-secondary{
+        font-size: 25px;
+    }
+    li{
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+.about__bio{
+    p{
+        font-size: 19px;
+    }
+}
+
+.projects{
+    &__bio-image{
+        height: 40vh;
+    }
+        &__items{
+            grid-template-columns: repeat(2, 1fr);  
+             margin-top: 45px;
+           
+        }
+    .text-secondary{
+        font-size: 3rem;
+        
+    }
+}
+// .contact__list {
+//     grid-template-columns: repeat(2, 1fr);  
+// }
+
+}
+.contact__list {
+    grid-template-columns: repeat(2, 1fr);  
+}
+
+@include media-lg{
+    
+       .projects__items{
+                grid-template-columns: repeat(3, 1fr);  }
+
+      .contact{
+
+        &__list {
+             grid-template-columns: repeat(3, 1fr);  
+             font-size: 1.5rem;
+          
+                    }
+        }
+      }       
+
+      @include media-xl{
+        .projects__bio-image {
+            height: 80vh;
+            background-size: cover;
+        }
+      }

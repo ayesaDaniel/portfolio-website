@@ -1,0 +1,36 @@
+.Contact{
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+    background:linear-gradient(rgba(39, 39, 39, 1), transparent),
+    url("/img/Main Picture.jpg");
+   
+    background-size: cover;
+  
+ h2{
+    font-size: 3rem;
+    margin-bottom:2rem ;
+ }
+
+ &__list{
+    display: grid;
+     grid-template-columns: 1fr;
+    gap: 2rem;
+    font-size: 1.5rem;
+ }
+
+ .social-icons{
+    position: initial;
+    margin-top: 2rem;
+ }
+}
+.contact__phone{
+padding-top: 20px ;
+}
+
+.contact__address{
+    padding-top: 20px ;
+    }
